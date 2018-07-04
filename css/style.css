@@ -1,0 +1,141 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+	background: #dadada;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header {
+    margin: 0 auto;
+    width: 800px;
+     background: white;
+    padding: 6px;
+    padding-left: 20px; 
+}
+
+
+h1{
+    
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    margin-bottom: 5px;
+    display: inline;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 23px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+}
+
+
+.main {
+	margin: 0 auto;
+	width: 800px;
+
+}
+
+
+article {
+	background: #FC3232;
+	width: 800px;
+	height: 400px;
+	margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+article div {
+	width: 50%;
+	float: left;
+}
+
+article div + div {
+    
+        padding: 22px;
+}
+
+img {
+		max-width: 100%;
+}
+
+h2 {
+	color: white;
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-size: 38px;
+	line-height: 32px;
+}
+
+p {
+	line-height: 22px;
+	font-weight: 400;
+	font-size: 15px;
+    background:white;
+    display: inline;
+
+}
+
+
+ul {
+    
+    margin-top: 12px;
+    border-top: 1px solid white;
+    padding-top: 18px;
+    
+}
+
+
+/* PARA PONER TODO CON TRANSPARENCIA */
+
+
+/*a {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    opacity:0;
+    transition: all 0.3s;
+    background: url("../img/zoom.png") no-repeat center grey;
+}
+
+a:hover {
+    opacity:0.5;
+
+}*/
+
+.zoom {
+    display: block;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transition: all 0.3s;
+    background: rgba(0,0,0,0)
+}
+
+.zoom:hover {
+    background: rgba(0,0,0,0.3)
+}
+
+.zoom div {
+    background: url(../img/zoom.png) no-repeat center;
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.zoom:hover div{
+    opacity: 1;
+}
+
+
+
+li {
+    list-style:none;
+}
